@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Allignment</title>
+<style>
+  *{
+    box-sizing: border-box;
+  }
+  .container{
+    background-color: chocolate;
+    width: 900px;
+    border: 4px dashed purple;
+   margin: auto;
+  }
+  .items{
+    border: 3px solid white;
+    margin: 1px 10px 10px 10px;
+    padding: 10px 10px 10px 10px;
+    background-color: aquamarine;
+    /* margin: auto; */
+  }
+  #fruits{
+    float: left;
+    width: 47.6%;
+  }
+  #computers{
+    float: right;
+    width: 47.6%;
+  }
+  #stationary{
+    clear: both;
+    /* float: left; */
+    width: 98%;
+  }
+ h2{
+  text-align: center;
+ }
+</style>
+</head>
+<body>
+    <h1>Allignment, Float, Clear</h1>
+    <div class="container">
+      <h2> Welcome to my store</h2>
+        <div id="fruits" class="items">   <!--class is the bigger picture and id is a unique thing which that particular div will hold-->
+            <h4>FRUITS</h4>
+          <p id="fruitsPara" class="Para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, commodi nihil! Voluptate nobis unde dolores magnam reiciendis dolorum! Neque, amet!
+          </p>
+        </div>
+
+        <div id="computers" class="items">  
+            <h4>COMPUTERS</h4>
+          <p id="computersPara" class="Para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, commodi nihil! Voluptate nobis unde dolores magnam reiciendis dolorum! Neque, amet!
+          </p>
+        </div>
+
+        <div id="stationary" class="items">  
+            <h4>STATIONARY</h4>
+          <p id="stationaryPara" class="Para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, commodi nihil! Voluptate nobis unde dolores magnam reiciendis dolorum! Neque, amet!
+          </p>
+        </div>
+    </div>
+</body>
+</html>

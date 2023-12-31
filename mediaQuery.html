@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <style>
+        .box{
+            background-color: red;
+            color:white;
+            font-size: 30px;
+            text-align: center;
+            display: none;
+        }
+
+        @media (max-width:300px){
+            /* This style will be applied when the screen width is equal to or less than 300 pixels */
+            #box-1{
+                display: block;
+                background-color: cyan;
+            }
+        }
+
+        @media (min-width:300px) and (max-width:500px){
+            /* This style will be applied when the screen width is b/w 300 to 500 px */
+            #box-2{
+                display: block;
+                background-color: blueviolet;
+            }
+        }
+
+        @media (min-width:500px) and (max-width:800px){
+            /* This style will be applied when the screen width is b/w 500 to 800 px */
+            #box-3{
+                display: block;
+                background-color: coral;
+            }
+        }
+
+        @media (min-width:800px){
+            /* This style will be applied when the screen width is equal to or greater than 800 pixels */
+            #box-4{
+                display: block;
+                background-color: darkgreen;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="box-1">mai ek iphone hu</div>
+    <div class="box" id="box-2">mai ek tablet hu</div>
+    <div class="box" id="box-3">mai ek laptop hu</div>
+    <div class="box" id="box-4">mai ek widescreen monitor hu</div>
+</body>
+</html>

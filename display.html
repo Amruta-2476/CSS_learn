@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display_property</title>
+    <style>
+        header{
+             margin: auto; /* this did not make it center...coz it was an entire block row */
+            border: 2px solid red;  /*to make it center you need to reduce its width*/
+            width: 999px;
+            margin: 10px 10px;
+            /* now even if u remove width and argin auto its ok
+            coz you made the elements of header to be center */
+        }
+        img{
+            display: block;
+            width: 60px;
+            height: 60px;
+           margin: auto;
+        }
+        h3{
+            margin: 0%;
+            text-align: center;
+        }
+        .box{
+            border: 2px solid black;
+            margin: 10px 10px;
+            padding: 5px 10px 5px 10px;
+            background-color: bisque;
+            box-sizing: border-box;
+            width: 30%;
+            display: inline-block;
+        }
+        .container{
+            margin: auto;
+            width: 1029px;
+        }
+    </style>
+</head>                 
+<body>
+    <!-- <h3>CSS Display Property</h3> -->
+    <header class="top">
+        <img src="https://i1.wp.com/www.coffeenancy.com/wordpress/wp-content/uploads/2015/03/circlesunset1.png" alt="rer">
+      <h3>Welcome to my Blog</h3>
+    </header>
+    <div class="container">
+        <div class="box" id="para1">
+            <h4>This is para one</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, repellendus autem voluptas, atque dolorum dolore nihil ipsum dignissimos non quidem pariatur ipsam saepe laboriosam nam, libero molestias rem consectetur. Est velit quos numquam!</p>
+           </div>
+        <div class="box" id="para2">
+            <h4>This is para two</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate voluptatem minima, natus eaque voluptatum assumenda nobis. Quaerat incidunt iusto eveniet vero magni impedit voluptates, aliquid sint facilis? Ipsa eum eius eveniet.</p>
+           </div>
+        <div class="box" id="para3">
+            <h4>This is para three</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis mollitia voluptas et ipsum amet ut vel, perferendis sed! Iste, quaerat, nesciunt eveniet, perspiciatis repellat dolore minus harum qui eos laborum at tenetur ducimus.</p>
+           </div>
+    </div>
+       
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>more on selectors</title>
+    <style>
+        h1{
+            background-color: red;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+        }
+        /* div p{
+            color: blue;
+            background-color: yellow;
+            font-weight: bold;
+        } */
+        div > p{  /*only apply if p is direct child of div*/
+            color: blue;
+            background-color: yellow;
+            font-weight: bold;
+        }
+
+        /*apply on para whose previous element is div*/
+        div + p{
+            color: white;
+            background-color: purple;
+        }
+    </style>
+</head>
+<body>
+    <h1>this is more on selectors</h1>
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li class="item"><p>this is para inside li</p></li>
+                <li>this won't get affected by div li p</li>
+                <p>this is para inside ul not direct child</p>
+            </ul>
+          <p>this is a paragraph</p>  
+        </div>
+        <p>this is another paragraph</p>
+    </div>
+    <p>this is outermost paragraph</p>
+</body>
+</html>

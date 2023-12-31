@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transitions</title>
+    <style>
+       #box{
+        display: flex;
+        height: 200px;
+        width: 200px;
+        background-color: red;
+        justify-content: center;
+        align-items: center;
+        transition-property: all;
+        /* transition-property: background-color; */
+        transition-duration: 0.2s; /* Duration of the animation ..kitna time lega transition hone mein*/
+        transition-timing-function: ease-in;
+       }
+
+       #box:hover{
+        background-color: green;
+        height: 300px;
+        width: 300px;   /*zoom in */
+        border-radius: 20px;
+        font-size: 45px;
+       }
+    </style>
+</head>
+<body>
+    <h3>This is css transition</h3>
+    <div class="container">
+        <div id="box">
+            this is my box
+        </div>
+    </div>
+</body>
+</html>

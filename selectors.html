@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS selectors</title>
+    <style>
+        /* element selector */
+        h3{
+            color: blue;
+        }
+        /* id selector */
+       #firstPara{  /* "#idName" to style particular elements with that idName*/
+        color: azure;
+        background-color: crimson;
+       }
+
+       /* class selector */
+      .redElement{    /* .className = to style particular elements with that className*/
+        color: brown;
+        font-weight: bold;
+        background-color: aqua;
+      }
+
+      .another2nd{
+        text-align: center;
+        border: 2px solid purple;
+      }
+
+      /* grouping selector */
+      footer, span{
+        background-color: darkseagreen;
+      }
+    </style>
+</head>
+<body>
+    <h3>CSS selectors</h3>
+    <p id="firstPara">this is simple paragraph to demonstrate css selectors</p>
+
+    <p id="secondPara" class="redElement another2nd">this is another simple paragraph to demonstrate css selectors. Don't make me cry</p>
+
+    <p>this isjfhdfjdhjkdsakdks e css selectors. Don't make me cry</p>
+    <p>duiueiqwjeiqwdoqwdwkkedk css selectors. Don't make me cry</p>
+
+    <span>this too can be done </span>
+    <footer>this is footer</footer>
+</body>
+</html>
